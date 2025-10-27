@@ -4,12 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Restaurante El Sabor</title>
+  <!-- Tipografías y estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#fff7f6">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1 class="logo">El Sabor</h1>
+      <h1 class="logo"><span class="mark">El</span> Sabor</h1>
+      <span class="kawaii" aria-hidden="true">(｡•ㅅ•｡)</span>
       <nav class="nav">
         <a href="#home">Inicio</a>
         <a href="#menu">Menú</a>
@@ -22,10 +28,12 @@
   <main>
     <section id="home" class="hero">
       <div class="container hero-content">
-        <h2>Bienvenido a El Sabor</h2>
-        <p>Comida casera, ingredientes frescos y una atmósfera acogedora.</p>
-        <a class="btn" href="#menu">Ver Menú</a>
+  <h2>Bienvenido a <span>El Sabor</span> <span class="kawaii">(*≧ω≦)</span></h2>
+  <p class="lead">Comida casera, ingredientes frescos y una atmósfera acogedora — cada plato cuenta una historia.</p>
+  <a class="btn" href="#menu">Ver Menú</a>
       </div>
+      <!-- Onda decorativa -->
+      <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path fill="#fff" d="M0,48L48,42.7C96,37,192,26,288,21.3C384,16,480,16,576,21.3C672,27,768,37,864,42.7C960,48,1056,48,1152,48C1248,48,1344,48,1392,48L1440,48L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path></svg>
     </section>
 
     <section id="menu" class="menu">
@@ -33,27 +41,39 @@
         <h2>Nuestro Menú</h2>
         <div class="cards">
           <article class="card">
-            <h3>Paella Valenciana</h3>
+            <h3>Paella Valenciana <span class="kawaii small">(＾◡＾)</span></h3>
             <p>Arroz con mariscos, azafrán y toque tradicional.</p>
-            <span class="price">€12.50</span>
+            <div class="card-actions">
+              <button class="buy-btn" aria-label="Comprar">🐶</button>
+              <span class="price">€12.50</span>
+            </div>
           </article>
 
           <article class="card">
-            <h3>Filete a la Parrilla</h3>
+            <h3>Filete a la Parrilla <span class="kawaii small">(≧◡≦)</span></h3>
             <p>Corte jugoso, acompañado de papas rústicas y salsa de la casa.</p>
-            <span class="price">€14.00</span>
+            <div class="card-actions">
+              <button class="buy-btn" aria-label="Comprar">🐶</button>
+              <span class="price">€14.00</span>
+            </div>
           </article>
 
           <article class="card">
-            <h3>Ensalada Mediterránea</h3>
+            <h3>Ensalada Mediterránea <span class="kawaii small">(^._.^)</span></h3>
             <p>Lechugas mixtas, tomate, aceitunas, queso feta y vinagreta.</p>
-            <span class="price">€8.50</span>
+            <div class="card-actions">
+              <button class="buy-btn" aria-label="Comprar">🐶</button>
+              <span class="price">€8.50</span>
+            </div>
           </article>
 
           <article class="card">
-            <h3>Postre: Tarta de Limón</h3>
+            <h3>Postre: Tarta de Limón <span class="kawaii small">(｡•̀ᴗ-)✧</span></h3>
             <p>Sabor cítrico, masa crujiente y crema ligera.</p>
-            <span class="price">€5.00</span>
+            <div class="card-actions">
+              <button class="buy-btn" aria-label="Comprar">🐶</button>
+              <span class="price">€5.00</span>
+            </div>
           </article>
         </div>
       </div>
